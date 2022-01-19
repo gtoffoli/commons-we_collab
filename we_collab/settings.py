@@ -1,0 +1,26 @@
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(__file__)
+
+HAS_SAML2 = False # supports the SSO interface provided by the Up2U project (www.up2uiversity.eu) ?
+HAS_LRS = False # supports xAPI?
+HAS_EARMASTER = False # supports import and processing of the data exported from the EarMaster application ?
+
+from commons.settings import *
+
+PRIMARY_DOMAIN = 'we-collab.commonspaces.eu'
+SECONDARY_DOMAIN = None
+TEST_DOMAIN = None
+
+SITE_ID = 5
+SITE_NAME = 'WE-COLLAB'
+SITE_ROOT = 'we-collab' # slug of the root community
+HAS_CALENDAR = True
+ALLOW_REDUCED_PROFILE = True
+
+WSGI_APPLICATION = 'we_collab.wsgi.application'
+ROOT_URLCONF = 'we_collab.urls'
+
+PROJECT_TITLE = 'WE-COLLAB - Erasmus+'
+PROJECT_NAME = 'we_collab'
+LOGIN_REDIRECT_URL = 'we_collab.home'
