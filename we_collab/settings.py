@@ -13,6 +13,8 @@ SECONDARY_DOMAIN = None
 TEST_DOMAIN = None
 
 SITE_ID = 5
+IS_SITE_PRIVATE = True
+IS_SITE_ERASMUS = True
 SITE_NAME = 'WE-COLLAB'
 SITE_ROOT = 'we-collab' # slug of the root community
 HAS_CALENDAR = True
