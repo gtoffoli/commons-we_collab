@@ -26,3 +26,13 @@ ROOT_URLCONF = 'we_collab.urls'
 PROJECT_TITLE = 'WE-COLLAB - Erasmus+'
 PROJECT_NAME = 'we_collab'
 LOGIN_REDIRECT_URL = 'we_collab.home'
+
+LANGUAGES = (
+    (u'en', u'English'),
+    (u'da', u'Dansk'),
+    (u'el', u'Ελληνικά'),
+    (u'es', u'Español'),
+    (u'hr', u'Hrvatski'),
+    (u'it', u'Italiano'),
+    (u'lt', u'Lietuvių'),
+)
