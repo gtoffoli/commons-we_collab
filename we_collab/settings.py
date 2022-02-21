@@ -8,7 +8,8 @@ HAS_EARMASTER = False # supports import and processing of the data exported from
 
 from commons.settings import *
 
-PRIMARY_DOMAIN = 'we-collab.commonspaces.eu'
+# PRIMARY_DOMAIN = 'we-collab.commonspaces.eu'
+PRIMARY_DOMAIN = 'www.we-collab.eu'
 SECONDARY_DOMAIN = None
 TEST_DOMAIN = None
 
