@@ -22,6 +22,15 @@ HAS_CALENDAR = True
 ALLOW_REDUCED_PROFILE = True
 
 WSGI_APPLICATION = 'we_collab.wsgi.application'
+
+# see: https://github.com/django/channels/issues/1039
+# see: https://channels.readthedocs.io/en/latest/topics/consumers.html?highlight=inmemorychannellayer#websocketconsumer
+ASGI_APPLICATION = 'we_collab.asgi.application'
+if not 'channels' in INSTALLED_APPS:
+    INSTALLED_APPS = ['channels'] + INSTALLED_APPS
+if not 'feedback' in INSTALLED_APPS:
+    INSTALLED_APPS = ['feedback'] + INSTALLED_APPS
+
 ROOT_URLCONF = 'we_collab.urls'
 
 PROJECT_TITLE = 'WE-COLLAB - Erasmus+'
