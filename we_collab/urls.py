@@ -9,6 +9,7 @@ import commons.views
 
 urlpatterns = [
     url(r"^$", views.home, name="we-collab.home"),
+    url(r"^feedback/", include('feedback.urls')),
     url(r'^', include('commons.urls')),
 ]
 

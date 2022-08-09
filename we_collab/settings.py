@@ -8,6 +8,8 @@ HAS_EARMASTER = False # supports import and processing of the data exported from
 
 from commons.settings import *
 
+CSRF_TRUSTED_ORIGINS = CSRF_TRUSTED_ORIGINS + ['http://www.we-collab.eu', 'https://www.we-collab.eu',]
+
 # PRIMARY_DOMAIN = 'we-collab.commonspaces.eu'
 PRIMARY_DOMAIN = 'www.we-collab.eu'
 SECONDARY_DOMAIN = None
