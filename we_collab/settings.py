@@ -53,3 +53,10 @@ for code, name in LANGUAGES:
     if not code in LANGUAGE_MAPPING:
         LANGUAGE_MAPPING[code] = name
 
+if not DEBUG:
+    XAPI_DEFAULT_PLATFORM = 'CS we-collab'
+
+XAPI_PLATFORMS = [
+    ('CS we-collab', 'CommonSpaces for WE-COLLAB'),
+] + XAPI_PLATFORMS
+
