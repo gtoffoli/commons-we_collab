@@ -60,3 +60,6 @@ XAPI_PLATFORMS = [
     ('CS we-collab', 'CommonSpaces for WE-COLLAB'),
 ] + XAPI_PLATFORMS
 
+STATICFILES_DIRS = [
+    "/github/commons-we_collab/we_collab/static",
+]
