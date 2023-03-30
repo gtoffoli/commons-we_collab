@@ -54,6 +54,7 @@ for code, name in LANGUAGES:
         LANGUAGE_MAPPING[code] = name
 
 if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     XAPI_DEFAULT_PLATFORM = 'CS we-collab'
 
 XAPI_PLATFORMS = [
