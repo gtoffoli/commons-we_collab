@@ -6,10 +6,12 @@ HAS_SAML2 = False # supports the SSO interface provided by the Up2U project (www
 HAS_LRS = True # supports xAPI?
 HAS_EARMASTER = False # supports import and processing of the data exported from the EarMaster application ?
 
+"""
 # must be before import of commons.settings
 PRIMARY_DOMAIN = 'www.we-collab.eu'
 SECONDARY_DOMAIN = None
 TEST_DOMAIN = None
+"""
 
 from commons.settings import *
 
