@@ -10,3 +10,6 @@ def home(request):
         return HttpResponseRedirect('/project/we-collab/')
     else:
         return cover(request)
+
+def raise_exception(request):
+    raise
