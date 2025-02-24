@@ -66,3 +66,5 @@ XAPI_PLATFORMS = [
 STATICFILES_DIRS = [
     "/github/commons-we_collab/we_collab/static",
 ]
+
+TEMPLATES[0]['DIRS'] = TEMPLATES[0]['DIRS'] + [os.path.join(BASE_DIR, "we_collab", "templates")]

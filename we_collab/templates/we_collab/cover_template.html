@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block head_title %}{{ flatpage.title }}{% endblock %}
+{% block extra_style %}
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='stylesheet' id='google_font-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A300%2C600%2C700%22+rel%3D%22stylesheet&#038;ver=4.8.25' type='text/css' media='all' />
+<style>
+body {
+  padding-block-start: 60px !important;
+  font-family: Montserrat, sans-serif;
+ }
+.cover_body {
+  margin-left: 1em; margin-right: 1em; 
+}
+.title {
+  font-size: xx-large;
+  font-weight: Semi Bold;
+  text-align: center;
+}
+.sub_title {
+  font-size: small;
+  text-align: center;
+}
+.para_title {
+  font-size: x-large;
+  font-weight: Semi Bold;
+  margin-top: 0.5em; margin-bottom: 0.5em; 
+}
+.cover_para {
+  margin-top: 0.5em; margin-bottom: 0.5em; 
+}
+.result_title {
+  font-size: large;
+  font-weight: Semi Bold;
+  margin-top: 0.5em; margin-bottom: 0.5em; 
+}
+</style>
+{% endblock %}
+
+{% block body_class %}{{ flatpage.title }}{% endblock %}
+
+{% block topbar_base %}
+<header>
+  <div class="navbar-fixed-top">
+    <div class="navbar navbar-inverse">
+      <div class="container">
+       <div class="navbar-header pull-left">
+         <a class="navbar-brand mynavbar-brand hidden-xs" href="/"><img src="{% static "commons/img/common_logo_white.png" %}" class="img-responsive"></a>
+         <a  class="navbar-brand mynavbar-brand-xs visible-xs" href="/"><img src="{% static "commons/img/common_logo_white_short.png" %}" class="img-responsive"></a>
+         {% if SITE_ID > 1 %}<a class="navbar-brand" style="margin-inline-start: -20px; color:white; line-height:22px" href="/"><span style="font-size:85%">{% trans "for" %}</span><span style="margin-left:5px; font-family: LeagueMonoVariable,sans-serif; font-size:x-large;">{{ site_name }}</span></a>{% endif %}
+       </div>
+     </div>
+    </div>
+  </div>
+</header>
+
+{% endblock %}
+
+{% block body_base %}
+<section id="content_body">
+  <div class="container-fluid paddingLR0 paddingTB10 bc-white">
+  <div class="container">{{ flatpage.content|safe }}</div>
+  </div>
+</section>
+{% endblock %}
+
+
